@@ -27,7 +27,7 @@ header{
     text-align: center;
 }
 header > h1{
-    padding-top:50px;
+    padding: top 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
     font-size: 10vw;
@@ -65,8 +65,15 @@ header  a:hover, footer  a:hover{
    padding: 5px;
     background-color: rgba(56, 56, 56, 0.411);
  }
+  section#img01{
+ background-image: url("../imagens/background001.jpg");
+  }
+  section#img02{
+    background-image: url("../imagens/background002.jpg");
+
+  }
     footer{
-        background-color: black;
+        background-color:black;
         color: white;
         text-align: center;
         padding: 10px;

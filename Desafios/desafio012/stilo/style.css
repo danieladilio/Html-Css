@@ -21,9 +21,9 @@ html,body{
     background-color: darkgray;
     font-family: var(--fonte1);
 }
-header{
+header{ 
     background-color: black;
-    color: white;
+    color:white;
     text-align: center;
 }
 header > h1{
@@ -58,7 +58,9 @@ header  a:hover, footer  a:hover{
  section.imagem{
     background-color: rgb(48, 47, 47);
     color: white;
-    
+    text-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.61);
+    background-attachment: fixed;
+    background-image: cover;
 
  }
  section.imagem >p{
@@ -66,19 +68,22 @@ header  a:hover, footer  a:hover{
    padding: 5px;
     background-color: rgba(56, 56, 56, 0.411);
     text-shadow: 1px 1px 0px black;
+    
  }
   section#img01{
  background-image: url("../imagens/background001.jpg");
  background-position: right center;
+ 
   }
   section#img02{
     background-image: url("../imagens/background002.jpg");
+   
 
   }
     footer{
         background-color:black;
         color: white;
         text-align: center;
-        padding: 10px;
+          padding: 10px;
         font-size: small;
     }         

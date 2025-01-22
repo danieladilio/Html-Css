@@ -6,28 +6,24 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Exemplo De Formulário</h1>
-    <form action="" method="get" autocomplete="on">
-
-         <p>
-            <label for="iano">Em que ano você nasceu</label>
-            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcidade">
-         </p>
-<p>
-    <label for="iidade">Sua idade é</label>
-    <output id="iidade">0</output>
-</p>
-
-   <p>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
-   </p>
-
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </form>
+
     <script>
-        function calcidade() {
-            let atual = new Date().getFullYear() 
-            iidade.innerHTML= Number(atual) - Number(iano.value)
+        function calcIdade() {
+            let atual = new Date().getFullYear();
+            iidade.innerHTML = Number(atual) - Number(iano.value);
         }
     </script>
 </body>

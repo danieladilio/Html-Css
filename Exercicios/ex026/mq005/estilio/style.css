@@ -7,6 +7,7 @@
 }
 body,html{
     background-color: lightgray;
+   
 }
 
 header{
@@ -49,7 +50,7 @@ menu >ul{
     background-color: gray;
   }
   main{
-   width: 90vw;
+    width:90vw;
    background-color: white;
    margin: auto;
    margin-top: 10px;

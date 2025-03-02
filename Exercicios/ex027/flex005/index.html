@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Flexbox centralizado</title>
     <style>
-        div.container{
-              background-color: lightsalmon;
-              display: flex;
-           
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
         }
-        div.item{
-        background-color: lightblue;
-        border: 1px solid black;
-        flex: auto;
-        text-align: center;
+        body{
+            background-color: lightsalmon;
         }
-        
+        main{
+            background-color: lightgreen;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            background-color:lightseagreen;
+            height: 200px;
+            width: 200px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-    <div class="item">A</div>
-    <div class="item">B</div>
-    <div class="item">C</div>
-    <div class="item">D</div>
-    <div class="item">E</div>
-    <div class="item">F</div>
-    <div class="item">G</div>
-
-    </div>
+ <main>
+    <section>
+        <h1>Tela De Login</h1>
+    </section>
+ </main>
 </body>
 </html>
